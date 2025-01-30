@@ -140,7 +140,7 @@
 
                 <!-- Passo 3 -->
                 <div class="col-md-3">
-                    <i class="fas fa-party-horn icone"></i>
+                    <i class="fa-solid fa-check-to-slot icone"></i>
                     <h4 class="passo">Passo 3</h4>
                     <p>Celebre a liberdade: sem dívidas, com salário íntegro e crédito renovado!</p>
                 </div>
