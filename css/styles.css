@@ -210,6 +210,41 @@ p {
     color: #1a1a1a;
 }
 
+.acabe-com-as-dividas h3 {
+    color: red;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    border: 1px solid red;
+    border-radius: 20px;
+    max-width: 50%;
+    padding: 20px;
+    animation: pulsar 1.5s infinite ease-in-out;
+}
+
+.acabe-com-as-dividas h4 {
+    color: rgb(255, 166, 0);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 166, 0);
+    border-radius: 20px;
+    max-width: 50%;
+    padding: 20px;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .acabe-com-as-dividas .subtitulo {
     font-size: 1.2rem;
     color: #001080;
@@ -321,6 +356,34 @@ p {
     gap: 15px;
 }
 
+.footer1 .imgs-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer1 .empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.footer1 .empresa img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.footer1 .empresa small {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 5px;
+}
+
+
 .footer1 .btn-dividas {
     background-color: #ffc400;
     border: none;
@@ -332,6 +395,8 @@ p {
     z-index: 1;
     padding: 20px;
     font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 .footer1 .btn-dividas:hover {
@@ -448,6 +513,14 @@ p {
 
     .acabe-com-as-dividas .subtitulo {
         font-size: 1rem;
+    }
+
+    .acabe-com-as-dividas h3 {
+        font-size: 1rem;
+    }
+
+    .acabe-com-as-dividas h4 {
+        font-size: 0.9rem;
     }
 
     .acabe-com-as-dividas .descricao {

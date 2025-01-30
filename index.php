@@ -39,8 +39,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>
-                        <span class="adeus">Dê Adeus</span> às Dívidas de Empréstimos <span
-                            class="consignados">Consignados Hoje!</span>
+                        <span class="adeus">Pare de pagar</span> juros abusivos! Veja como recuperar seu salário <span
+                            class="consignados">ainda hoje!</span>
                     </h2>
                     <h6>Dívida de consignado?</h6>
                     <p>Livre-se das dívidas, recupere seu salário e seu crédito agora! Resolva tudo de imediato
@@ -56,9 +56,9 @@
                             <label>E-mail: </label>
                             <input class="form-control" type="email">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input"> <label class="form-check-label">ESTOU
-                                    CIENTE DE QUE O CUSTO MENSAL DOS SERVIÇOS É DE R$350 E POSSO
-                                    PAGAR ESSE VALOR ASSIM QUE ASSINAR O CONTRATO</label>
+                                <input type="checkbox" class="form-check-input"> <label class="form-check-label">
+                                    Pare de pagar juros abusivos de milhares de reais por mês. Por apenas R$350/mês,
+                                    nosso time jurídico recupera seu salário e crédito!</label>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button class="btn-dividas">Sim, quero me livrar das dívidas!</button>
@@ -66,7 +66,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6 mt-5">
+                <div style="margin-top: 120px;" class="col-md-6">
                     <img src="./imgs/img1.png" class="img-fluid">
                 </div>
             </div>
@@ -167,16 +167,23 @@
                         Vamos usar nossa expertise para zerar suas dívidas e trazer de volta sua paz de espírito!"
                     </p>
 
-                    <a href="#" class="btn-cta">SIM! QUERO MINHA LIBERDADE FINANCEIRA!</a>
+                    <a href="#liberdade-financeira" class="btn-cta">SIM! QUERO MINHA LIBERDADE FINANCEIRA!</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Acabe com as Dívidas -->
-    <section class="acabe-com-as-dividas">
+    <section id="acabe-com-as-dividas" class="acabe-com-as-dividas">
         <div class="container text-center">
             <h2 class="titulo">Acabe com as Dívidas Imediatamente!</h2>
+            <div class="d-flex justify-content-center">
+                <h3><i class="fa-solid fa-triangle-exclamation"></i> Vagas Limitadas!!! <i
+                        class="fa-solid fa-triangle-exclamation"></i></h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h4>Atendemos apenas 10 clientes novos por dia!</h4>
+            </div>
             <p class="subtitulo">
                 Livre-se de <strong>TODAS AS SUAS DÍVIDAS</strong> pagando
                 <span class="destaque-vermelho">apenas R$350/mês no boleto!</span>
@@ -202,8 +209,8 @@
                         <input type="checkbox" class="form-check-input" id="confirmacao">
                         <label class="form-check-label" for="confirmacao">
                             <span class="aviso-vermelho">
-                                ESTOU CIENTE DE QUE O CUSTO MENSAL DOS SERVIÇOS É DE R$350 E
-                                <strong>POSSO PAGAR</strong> ESSE VALOR ASSIM QUE ASSINAR O CONTRATO
+                                Pare de pagar juros abusivos de milhares de reais por mês. Por apenas R$350/mês, nosso
+                                time jurídico recupera seu salário e crédito!
                             </span>
                         </label>
                     </div>
@@ -243,7 +250,7 @@
     </section>
 
     <!--Footer 1-->
-    <footer class="footer1">
+    <footer id="liberdade-financeira" class="footer1">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
@@ -253,17 +260,35 @@
                     <p>A mídia e milhares de clientes felizes recomendam nosso serviço!</p>
                 </div>
                 <div class="col-md-5 imgs-footer">
-                    <img class="img-fluid ms-3 mb-3" src="./imgs/footer2.avif">
-                    <img class="img-fluid ms-3 mb-3" src="./imgs/footer3.avif">
-                    <img class="img-fluid ms-3 mb-3" src="./imgs/footer4.avif">
-                    <img class="img-fluid ms-3 mb-3" src="./imgs/footer5.avif">
-                    <img class="img-fluid ms-3 mb-3" src="./imgs/footer6.avif">
-                    <img class="img-fluid ms-3 mb-3" src="./imgs/footer7.avif">
+                    <div class="empresa">
+                        <img class="img-fluid" src="./imgs/footer2.avif">
+                        <small><i class="fa-solid fa-check"></i> Empresa Certificada</small>
+                    </div>
+                    <div class="empresa">
+                        <img class="img-fluid" src="./imgs/footer3.avif">
+                        <small><i class="fa-solid fa-check"></i> Parceria Oficial</small>
+                    </div>
+                    <div class="empresa">
+                        <img class="img-fluid" src="./imgs/footer4.avif">
+                        <small><i class="fa-solid fa-check"></i> Aprovada pelo Reclame Aqui</small>
+                    </div>
+                    <div class="empresa">
+                        <img class="img-fluid" src="./imgs/footer5.avif">
+                        <small><i class="fa-solid fa-check"></i> Selo de Segurança</small>
+                    </div>
+                    <div class="empresa">
+                        <img class="img-fluid" src="./imgs/footer6.avif">
+                        <small><i class="fa-solid fa-check"></i> Credibilidade Comprovada</small>
+                    </div>
+                    <div class="empresa">
+                        <img class="img-fluid" src="./imgs/footer7.avif">
+                        <small><i class="fa-solid fa-check"></i> Atendimento 5 Estrelas</small>
+                    </div>
                 </div>
 
                 <div class="col-md-12">
                     <div class="d-flex justify-content-center mt-5">
-                        <button class="btn-dividas">Sim, quero me livrar das dívidas</button>
+                        <a href="#acabe-com-as-dividas" class="btn-dividas">Sim, quero me livrar das dívidas</a>
                     </div>
                 </div>
             </div>
