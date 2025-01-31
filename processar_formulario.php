@@ -7,6 +7,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'] ?? '';
     $confirmacao = isset($_POST['confirmacao']) ? 1 : 0; // Verifica se foi marcado
 
+    if (!preg_match('/^\d{10,11}$/', $whatsapp)) {
+        header('Location: index.php?mensagem=erro_whatsapp#formulario');
+        exit();
+    }
+
     if (!empty($nome) && !empty($whatsapp) && !empty($email)) {
         try {
             $stmt = $pdo->prepare('INSERT INTO cadastro_clientes (nome, whatsapp, email, confirmacao) VALUES (:nome, :whatsapp, :email, :confirmacao)');

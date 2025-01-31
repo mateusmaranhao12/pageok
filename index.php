@@ -59,21 +59,24 @@
                         <span style="font-weight: bold;">preenchendo o formulário</span> abaixo:
                     </p>
 
-                    <div class="formulario">
-                        <form>
+                    <div id="formulario" class="formulario">
+                        <form action="processar_formulario.php" method="POST">
                             <label>Seu Nome: </label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" name="nome" required>
                             <label>WhatsApp com DDD: </label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" name="whatsapp" required>
+                            <?php if (isset($_GET['mensagem']) && $_GET['mensagem'] == 'erro_whatsapp') { ?>
+                                <small class="text-danger">Número de WhatsApp inválido. Insira apenas números com DDD.</small><br>
+                            <?php } ?>
                             <label>E-mail: </label>
-                            <input class="form-control" type="email">
+                            <input class="form-control" type="email" name="email" required>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input"> <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" required> <label class="form-check-label">
                                     Pare de pagar juros abusivos de milhares de reais por mês. Por apenas R$350/mês,
                                     nosso time jurídico recupera seu salário e crédito!</label>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button class="btn-dividas">Sim, quero me livrar das dívidas!</button>
+                                <button type="submit" class="btn-dividas">Sim, quero me livrar das dívidas!</button>
                             </div>
                         </form>
                     </div>
@@ -206,7 +209,7 @@
             </p>
 
             <!-- Formulário -->
-            <div id="formulario" class="formulario-container">
+            <div id="formulario2" class="formulario-container">
                 <form action="processar_formulario.php" method="POST">
                     <div class="form-group">
                         <input type="text" class="form-control" name="nome" placeholder="Qual seu nome?" required>
@@ -214,6 +217,11 @@
                     <div class="form-group">
                         <input type="text" class="form-control" name="whatsapp" placeholder="Qual seu WhatsApp com DDD?" required>
                     </div>
+
+                    <?php if (isset($_GET['mensagem']) && $_GET['mensagem'] == 'erro_whatsapp') { ?>
+                        <small class="text-danger">Número de WhatsApp inválido. Insira apenas números com DDD.</small>
+                    <?php } ?>
+
                     <div class="form-group">
                         <input type="email" class="form-control" name="email" placeholder="Qual seu e-mail?" required>
                     </div>

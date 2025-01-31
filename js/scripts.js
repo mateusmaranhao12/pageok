@@ -14,3 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 5000)
     }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Verifica se há um erro no WhatsApp
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('mensagem') && urlParams.get('mensagem') === 'erro_whatsapp') {
+        const formulario = document.getElementById('formulario')
+        if (formulario) {
+            formulario.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+    }
+});
+
