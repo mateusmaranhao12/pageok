@@ -37,6 +37,18 @@
     <section class="secao-index">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <!-- Exibir mensagem de sucesso ou erro -->
+                    <?php
+                    if (isset($_GET["mensagem"])) {
+                        if ($_GET["mensagem"] == "sucesso") {
+                            echo "<p class='mensagem-sucesso'>Cadastro realizado com sucesso!</p>";
+                        } elseif ($_GET["mensagem"] == "erro") {
+                            echo "<p class='mensagem-erro'>Erro ao cadastrar. Preencha todos os campos.</p>";
+                        }
+                    }
+                    ?>
+                </div>
                 <div class="col-md-6">
                     <h2>
                         <span class="adeus">Pare de pagar</span> juros abusivos! Veja como recuperar seu salário <span
@@ -174,7 +186,7 @@
     </section>
 
     <!-- Acabe com as Dívidas -->
-    <section id="acabe-com-as-dividas" class="acabe-com-as-dividas">
+    <section class="acabe-com-as-dividas">
         <div class="container text-center">
             <h2 class="titulo">Acabe com as Dívidas Imediatamente!</h2>
             <div class="d-flex justify-content-center">
@@ -194,19 +206,19 @@
             </p>
 
             <!-- Formulário -->
-            <div class="formulario-container">
-                <form>
+            <div id="formulario" class="formulario-container">
+                <form action="processar_formulario.php" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Qual seu nome?" required>
+                        <input type="text" class="form-control" name="nome" placeholder="Qual seu nome?" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Qual seu WhatsApp com DDD?" required>
+                        <input type="text" class="form-control" name="whatsapp" placeholder="Qual seu WhatsApp com DDD?" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Qual seu e-mail?" required>
+                        <input type="email" class="form-control" name="email" placeholder="Qual seu e-mail?" required>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="confirmacao">
+                        <input type="checkbox" class="form-check-input" name="confirmacao" id="confirmacao" required>
                         <label class="form-check-label" for="confirmacao">
                             <span class="aviso-vermelho">
                                 Pare de pagar juros abusivos de milhares de reais por mês. Por apenas R$350/mês, nosso
@@ -216,7 +228,9 @@
                     </div>
                     <button type="submit" class="btn-enviar">SIM! QUERO ME LIVRAR DAS DÍVIDAS!</button>
                 </form>
+
             </div>
+
         </div>
     </section>
 
@@ -288,7 +302,7 @@
 
                 <div class="col-md-12">
                     <div class="d-flex justify-content-center mt-5">
-                        <a href="#acabe-com-as-dividas" class="btn-dividas">Sim, quero me livrar das dívidas</a>
+                        <a href="#formulario" class="btn-dividas">Sim, quero me livrar das dívidas</a>
                     </div>
                 </div>
             </div>
