@@ -292,7 +292,7 @@
                     </div>
                     <div class="empresa">
                         <img class="img-fluid" src="./imgs/footer4.avif">
-                        <small><i class="fa-solid fa-check"></i> Aprovada pelo Reclame Aqui</small>
+                        <small><i class="fa-solid fa-check"></i> Empresa certificada</small>
                     </div>
                     <div class="empresa">
                         <img class="img-fluid" src="./imgs/footer5.avif">
@@ -306,6 +306,24 @@
                         <img class="img-fluid" src="./imgs/footer7.avif">
                         <small><i class="fa-solid fa-check"></i> Atendimento 5 Estrelas</small>
                     </div>
+                    <div class="reclame-aqui">
+                        <div class="reclame-conteudo">
+                            <img class="ra-widget-reputation-stamp"
+                                src="https://s3.amazonaws.com/raichu-beta/selos/assets/images/ra-1000.svg"
+                                alt="RA 1000" title="RA 1000">
+                            <small class="ra-text">RA 1000</small>
+                            <img class="ra-widget-reputation-logo"
+                                alt="Selo Reclame Aqui"
+                                src="https://s3.amazonaws.com/raichu-beta/selos/assets/images/reclame-aqui-logo.svg">
+                        </div>
+                        <small class="ra-legenda"><i class="fa-solid fa-check"></i> Empresa bem avaliada no Reclame Aqui</small>
+                    </div>
+
+                    <div class="empresa">
+                        <img class="img-fluid" src="./imgs/logo-bcb.svg">
+                        <small><i class="fa-solid fa-check"></i> Atendimento 5 Estrelas</small>
+                    </div>
+
                 </div>
 
                 <div class="col-md-12">

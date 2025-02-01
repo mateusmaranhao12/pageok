@@ -340,12 +340,12 @@ p {
 
 /*Footer*/
 .footer1 {
-    background-color: #141941;
+    background-color: #98d9ff;
     padding: 40px;
 }
 
 .footer1 p {
-    color: #fff;
+    color: #000;
 }
 
 .footer1 .imgs-footer {
@@ -379,7 +379,7 @@ p {
 
 .footer1 .empresa small {
     font-size: 0.9rem;
-    color: #fff;
+    color: #000;
     margin-top: 5px;
 }
 
@@ -401,6 +401,45 @@ p {
 
 .footer1 .btn-dividas:hover {
     background-color: #ff9900;
+}
+
+.reclame-aqui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #80C342; /* Borda verde */
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+    text-align: center;
+}
+
+.reclame-conteudo {
+    display: flex;
+    align-items: center;
+}
+
+.ra-widget-reputation-stamp {
+    height: 25px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.ra-text {
+    font-weight: bold;
+    color: #000;
+    margin-right: 5px;
+}
+
+.ra-widget-reputation-logo {
+    height: 15px;
+    width: auto;
+}
+
+.ra-legenda {
+    font-size: 13px;
+    color: #000;
+    margin-top: 3px;
 }
 
 /*Footer 2*/
